@@ -1,0 +1,77 @@
+body {
+	overflow: hidden;
+}
+
+div {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9000;
+}
+
+div:first-child {
+	background-color: grey;
+	overflow: hidden;
+}
+
+div:nth-child(2) {
+	background-image:url('spiral.png');
+	background-size: 200px 200px;
+	background-repeat: repeat;
+}
+
+table {
+	border-spacing: 0;
+}
+
+td {
+	width: 36px;
+	height: 36px;
+	padding: 1px;
+	border: 1px solid #000;
+}
+
+#dashboard {
+	height: auto !important;
+	width: auto !important;
+	background-color: #666;
+	z-index: 9999;
+	color: #bca;
+	opacity: 0.9;
+	padding-bottom: 5px;
+	border: 1px solid #000;
+	border-top: 0;
+	border-left: 0;
+}
+
+#dashboard > span {
+	display: block;
+}
+
+#dashboard > span > span {
+	display: block;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#dashboard > span:first-child {
+	border-bottom: 1px solid #fff;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+.hover {
+	opacity: 0.5;
+	background-color: blue !important;
+}
+
+.fly {
+	background-color: green;
+	opacity: 0.5;
+}
+.hold {
+	background-color: red;
+	opacity: 0.5;
+}
